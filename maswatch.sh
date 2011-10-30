@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-#	Author:		Timothy J. Luoma
+#	Author:	Timothy J. Luoma
 #	Email:		luomat at gmail dot com
 #	Date:		2011-10-29
 #
@@ -12,7 +12,7 @@ NAME="$0:t"
 
 # @TODO - what happens if user manually pauses download?!
 
-PKG=`find  /private/var/folders -ipath '*com.apple.appstore/*/*.pkg' 2>/dev/null -print`
+PKG=`find /private/var/folders -ipath '*com.apple.appstore/*/*.pkg' 2>/dev/null -print`
 
 if [ "$PKG" = "" ]
 then
