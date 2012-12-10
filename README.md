@@ -56,3 +56,10 @@ I [asked on Twitter](http://twitter.com/TJLuoma/status/129250886001233920) where
 
 In a nice little bit of symmetry, the script was written in [BBEdit](http://www.barebones.com/).
 
+# 2012-12-10 Update #
+
+I have updated this script today to use GNU's `du` if installed as `gdu` which is how Homebrew does it.
+
+Also, the percent download is also shown now.
+
+A few other tweaks and fixes here & there.
