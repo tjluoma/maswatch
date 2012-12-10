@@ -22,6 +22,17 @@ die ()
 }
 
 
+if ((! $+commands[growlnotify] ))
+then
+
+	# note: if growlnotify is a function or alias, it will come back not found
+
+	echo "$NAME: growlnotify is required but not found in $PATH"
+	exit 1
+
+fi
+
+
 live ()
 {
 	echo "$NAME: $@"
@@ -131,7 +142,7 @@ TOTAL_READABLE=`bytes2readable $TOTAL_DOWNLOAD_SIZE`
 #	the download is done.
 #
 
-echo "$NAME: PKG_FILE_PATH is: $PKG_FILE_PATH"
+echo "$NAME: PKG_FILE_PATH is:\n$PKG_FILE_PATH"
 
 while [ -e "$PKG_FILE_PATH" ]
 do
@@ -152,8 +163,8 @@ do
 
 	fi
 
-
-
+		# if we found a value for 'OLD_SIZE' then calculate how much we have downloaded since the last check.
+		# This can be useful for seeing if you need to increase/decrease $SLEEP_TIME
 	if [[ "$OLD_SIZE" != "0" ]]
 	then
 			DIFF=`expr $CURRENT_SIZE_RAW - $OLD_SIZE`
@@ -176,10 +187,12 @@ do
 done
 
 
+	# Once PKG_FILE_PATH no longer exists, we assume that the download had finished, so let's print a final report
 growlnotify -d "$NAME" \
 			--sticky \
 			--image "$APP_ICON_PATH" \
-			--message "Finished downloading ($CURRENT_SIZE of $TOTAL_READABLE)" "$DOWNLOAD_REAL_NAME"
+			--message "Finished downloading
+			($CURRENT_SIZE of $TOTAL_READABLE)" "$DOWNLOAD_REAL_NAME"
 
 
 #
