@@ -187,9 +187,3 @@ growlnotify -d "$NAME" \
 
 exit 0
 #EOF
-
-# <dict><key>artwork-url</key><string>/var/folders/d_/6wf7f1891zv5rdkyd29t0s9c0000gn/C/com.apple.appstore/498672703/flyingIcon</string><key>assets</key><array><dict><key>name</key><string>mzm.uumkpgza.pkg</string><key>size</key><integer>2062666</integer><key>typeStr</key><string>app</string><key>url</key><string>http://a1852.phobos.apple.com/us/r1000/097/Purple/7e/01/ea/mzm.uumkpgza.pkg</string></dict></array><key>bundle-id</key><string>com.droplr.droplr-mac</string><key>failed</key><false/><key>in-server-queue</key><false/><key>item-id</key><integer>498672703</integer><key>kind</key><string>software</string><key>paused</key><false/><key>show-in-dock</key><true/><key>subtitle</key><string>Droplr, LLC</string><key>title</key><string>Droplr</string></dict></array></dict></plist>
-
-# <dict><key>representations</key><array><dict><key>artwork-url</key><string>/var/folders/d_/6wf7f1891zv5rdkyd29t0s9c0000gn/C/com.apple.appstore/495026057/flyingIcon</string><key>assets</key><array><dict><key>name</key><string>mzm.qrnlnuht.pkg</string><key>size</key><integer>3703180282</integer><key>typeStr</key><string>app</string><key>url</key><string>http://a189.phobos.apple.com/us/r1000/089/Purple/00/33/f1/mzm.qrnlnuht.pkg</string></dict></array><key>bundle-id</key><string>com.apple.InstallAssistant.OSX8DP1</string><key>failed</key><false/><key>in-server-queue</key><false/><key>item-id</key><integer>495026057</integer><key>kind</key><string>software</string><key>paused</key><false/><key>show-in-dock</key><true/><key>subtitle</key><string>Apple</string><key>title</key><string>OS X Mountain Lion Developer Preview</string></dict>
-
-
