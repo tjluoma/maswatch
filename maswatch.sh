@@ -3,6 +3,7 @@
 #	Author:		TJ Luoma
 #	Email:		luomat at gmail dot com
 #	Date:		2011-10-26
+#	Updated:	2012-12-10
 #
 #	Purpose: 	Show size of current download from Mac App Store. Useful for keeping an eye on larger downloads such as OS X releases.
 #
